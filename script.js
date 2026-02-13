@@ -3,3 +3,4 @@ const toggleBtn = document.querySelector('.fa-bars'); // Add a <i class="fa fa-b
 toggleBtn.addEventListener('click', () => {
   nav.classList.toggle('active');
 });
+
