@@ -88,6 +88,11 @@ header h1{
     text-align: left;
 }
 
+.navbar a:hover{
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+     background-color: palevioletred;
+}
+
 .navbar>nav>ul {
     margin: 0;
     padding: 0;
