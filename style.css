@@ -340,9 +340,51 @@ button:hover {
     height: 450px;
     background-size: cover;
     background-position: center center;
+    margin-bottom: 20px;
+    
 }
-
-
+.pw-bg{
+    background-image: url('images/0.webp');
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+.gallery-bg{
+    background-image: url('images/mjbanner.webp');
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+.western-bg{
+    background-image: url('images/mjbanner.jpg');
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+.wedding-bg{
+    background-image: url('images/background.jpg');
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+.bride-bg{
+    background-image: url('images/wedding.jpg');
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+    opacity: 1;
+}
 .gallery .container .card{
     width: 300px;
     border: 1px solid black;
@@ -361,18 +403,10 @@ button:hover {
     transform: scale(1.01);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-.pw-bg{
-    background-image: url('images/rtwbanner.webp');
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    background-position: center center;
-}
+
 
            
-.gallery {
-    padding: 60px 5%;
-}
+
     
 
 .container {
@@ -386,7 +420,7 @@ button:hover {
 .card {
     background: #fff;
     width: 23%; 
-    border-radius: 10px;
+    border-radius: 15%;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     transition: all 0.4s ease;
@@ -398,6 +432,7 @@ button:hover {
     height: 400px;
     display: block;
     transition: transform 0.5s ease;
+    border-radius: 5%;
 }
 
 /* Card Content */
@@ -445,16 +480,16 @@ button:hover {
     height: 450px;
     background-size: cover;
     background-position: center center;
-
+    margin-bottom: 20px;
 }
 
 .bags-bg{
-    background-image: url('images/baglogo.jpg');
+    background-image: url('images/blog2.jpg');
     width: 100%;
     height: 450px;
     background-size: cover;
     background-position: center center;
-
+    margin-bottom: 20px;
 }
 
 .jewellery-bg{
@@ -463,7 +498,7 @@ button:hover {
     height: 450px;
     background-size: cover;
     background-position: center center;
-
+    margin-bottom: 20px;
 }
 
 /* contact page */
