@@ -10,29 +10,183 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header>
+        <div class="topbar">
 
-    <section class="contact-page">
-        <h1>CONTACT US</h1>
-        <p class="con-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptatibus?</p>
+            <div class="logo">
+                <strong>GLAM GURL STUDIO</strong>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <br>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </ul>
+            </nav>
+        </div>
 
-        <form class="contact">
-            <div class="input">
-                <input type="text" placeholder="Full Name" required>
-            </div>
-            <div class="input">
-                <input type="email" placeholder="Email Address" required>
-            </div>
-            <div class="input">
-                <input type="text" placeholder="Order Number">
-            </div>
-            <div class="input">
-                <textarea rows="5" placeholder="Your Message"></textarea>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown"><a href="#">Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li class="sub-dropdown"><a href="#">Dresses</a>
+                                <ul class="sub-dropdown-menu">
+                                    <li><a href="clothing.html">ReadyToWear</a></li>
+                                    <li><a href="clothing.html">PartyWear</a></li>
+                                    <li><a href="clothing.html">Westren</a></li>
+                                    <li><a href="clothing.html">Bridals</a></li>
+                                    <li><a href="clothing.html">Wedding</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="bags.html">Bags</a></li>
+                            <li><a href="perfumes.html">Perfumes</a></li>
+                            <li><a href="accessories.html">Accessories</a></li>
+                        </ul>
+                    </li>
+
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+        <div class="content">
+            <q>Unveil Your Aura with Style.</q>
+            <br>
+            <br>
+            <p class="para">Discover trendy clothing, chic bags, premium perfumes, and elegant accessories — all in one
+                place.</p>
+            <br>
+            <button>Shop Now</button>
+            <button>Explore More</button>
+        </div>
+    </header>
+ <main>
+   <section class="contact section">
+        <h2>CONTACT US</h2>
+        
+        <div class="contact">
+            <div class="form-section">
+                <h3>For Info</h3>
+                <form class="contact-form">
+                    <div class="input">
+                        <label for="name">Full Name </label>
+                        <input type="text" id="name" placeholder="Enter your full name" maxlength="50" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email Address </label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input">
+                        <label for="contact">Contact No </label>
+                        <input type="text" id="contact no" placeholder="Contact Number" required>
+                    </div>
+                    <div class="input">
+                        <label for="message">Message </label>
+                        <textarea id="message" placeholder="Enter your message" rows="6" required></textarea>
+                    </div>
+                    <button>Submit</button>
+                </form>
             </div>
 
-            <button type="submit">SUBMIT</button>
-            <p id="successMessage" class="success-msg"></p>
-        </form>
+            <div class="contact-info-section">
+                <h3>Our Info</h3>
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>Tariq Road, Karachi,Pakistan</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>+92 21 1234 5678</p>
+                        <p>+92 300 1234 567</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>info@motosphere.com</p>
+                        <p>support@motosphere.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>Website</h4>
+                        <p>www.glamgurlstudio.com</p>
+                    </div>
+
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <div class="hours-item">
+                            <span>Monday - Friday</span>
+                            <span>9:00 AM - 8:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Saturday</span>
+                            <span>10:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span>Sunday</span>
+                            <span>11:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="map-section">
+        <div class="map">
+            <h3>Find Us On Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7414421296326!2d67.0605643!3d24.8726789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e923adec49d%3A0xcc2dbd936f1c5627!2sTariq%20Rd%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1770985519990!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
+    </main>
+     <footer>
+        <div class="footer-col">
+            <h3>Glam GURL Studio</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, assumenda.
+                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="footer-col">
+            <h3>SOCIAL MEDIA</h3>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook "></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        <div class="footer-col">
+            <h3>QUICK LINKS</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+            <h3>HELP</h3>
+            <ul>
+                <li><a href="terms.html">Terms and Condition</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="faq.html">FAQ'S</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
