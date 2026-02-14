@@ -1,11 +1,20 @@
 
 
+$(document).ready(function(){
+   $(function () {
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false
+            });
+            AOS.init();
+
+        });
+// $(function(){
+//     $("#accordion").accordion();
+//   });
+});
 
 
-
-$(function(){
-    $("#accordion").accordion();
-  });
 
   
   

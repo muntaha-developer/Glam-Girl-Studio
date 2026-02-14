@@ -6,8 +6,88 @@
     <title>Glam Gurl Studio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ header{
+    height: 300px;
+    font-size: larger;
+ }
+
+ 
+ .faq-section {
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.a-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    background:  #f0d3da;;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+.faq{
+    width: 100%;
+    max-width: 1271px;
+    margin: -1px auto;
+  }
+  
+  /* Accordion questions */
+  #accordion h3 {
+    background-color:#d94f70;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    text-shadow: 1px 1px 3px rgba(116, 82, 82, 0.4);
+  }
+  #accordion h3:hover {
+    background-color: #e1879c;
+    box-shadow: 0px 0px 8px 2px black;
+  }
+  #accordion h3:after {
+    content: '\25BC'; 
+    float: right;
+    color: white;
+  }
+  /* Accordion answers */
+  #accordion div {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color:  #d94f70 ;
+    line-height: 1.6;
+    border-radius: 0 0 4px 4px;
+  }
+.a-container h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.a-container h1 span{
+    color: #ef3965;;
+}
+.a-container p {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+}
+    </style>
 </head>
 <body>
         <header>
@@ -55,57 +135,87 @@
                 </ul>
             </nav>
         </div>
+        <h1>FAQ'S</h1>
+        <button>Explore Collection</button>
         </header>
 
-        <div id="accordion">
-  <h3>Section 1</h3>
-  <div>
-    <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    </p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
-    </p>
-    <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
-    </p>
-  </div>
-</div>
+         <div class="faq" data-aos="fade-up">
+            <div class="faq-container" id="accordion" data-aos="fade-up">
+                <h3 class="font-para" data-aos="fade-up">What are your bakery hours?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">We are open Monday to Saturday from 8:00 AM to 8:00 PM. Closed on
+                        Sundays.</p>
+                </div>
 
+                <h3 class="font-para" data-aos="fade-up">Do you make custom cakes?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">Yes! We specialize in custom cakes for birthdays, weddings, and
+                        all celebrations.
+                        Please contact us to discuss your design.</p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">How can I place an order?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">You can shop from our bakery! <a
+                            href="shop.html">Order
+                            Now</a></p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">How far in advance should I order a custom cake?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">We recommend placing custom cake orders at least 5–7 days in
+                        advance. For wedding
+                        cakes, please book 2–4 weeks prior.</p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">Do you offer gluten-free or vegan options?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">Yes! We offer a selection of gluten-free, egg-free, and vegan
+                        desserts. Contact us
+                        for more details.</p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">Do you deliver? </h3>
+                <div>
+                    <p class="para" data-aos="fade-up">Yes, we offer delivery within the city for an additional fee.
+                        Delivery cost varies
+                        by location.</p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">What types of cakes do you offer?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">We offer chocolate, vanilla, red velvet, cheesecake, fruit cakes,
+                        cupcakes,
+                        pastries, and many seasonal specials.</p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">Do you have a minimum order for cupcakes or pastries?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">Yes, the minimum order is 6 cupcakes or 6 pastries per flavor.
+                    </p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">Can I taste test before ordering a wedding cake?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">Absolutely! We offer tasting sessions by appointment. Please
+                        contact us to schedule. <a href="contact.html">Book an appointment</a>
+                    </p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">Do you offer gift packaging?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">Yes, beautiful gift packaging is available for an additional fee.
+                    </p>
+                </div>
+
+                <h3 class="font-para" data-aos="fade-up">Can I request a specific baker?</h3>
+                <div>
+                    <p class="para" data-aos="fade-up">If you have a preferred baker, feel free to request them. We’ll
+                        do our best to
+                        accommodate!</p>
+                </div>
+            </div>
+        </div>
 
 <footer>
         <div class="footer-col">
@@ -147,8 +257,8 @@
         </div>
 
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 
 
