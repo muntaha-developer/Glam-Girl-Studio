@@ -366,6 +366,75 @@ button:hover {
     background-position: center center;
 }
 
+           
+.gallery {
+    padding: 60px 5%;
+}
+    
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Card Styling  */
+.card {
+    background: #fff;
+    width: 23%; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Card Content */
+.card p {
+    padding: 15px 15px 5px;
+    font-size: 14px;
+    color: #444;
+}
+
+.card strong {
+    display: block;
+    padding: 0 15px 10px;
+    font-size: 16px;
+    color: #e91e63;
+}
+
+.card button {
+    margin: 10px 15px 20px;
+    padding: 10px;
+    width: calc(100% - 30px);
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #e91e63;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
 .perfumes-bg{
     background-image: url('images/perfumebanner.webp');
     width: 100%;
@@ -540,7 +609,7 @@ button:hover {
     color:#444;
 }
 
-/* ================= MAP SECTION ================= */
+
 
 .map-section{
     padding:70px 60px;
@@ -561,8 +630,45 @@ button:hover {
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
+.blog-section{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    transition: all .3s ease;
+    
+}
 
+.blog-box{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: pink;
+    padding: 30px;
+    border: 1px solid palevioletred;
+}
 
+.blog-box li {
+    list-style: none;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    border: 1px solid palevioletred;
+}
+    
+.blog-section .image:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.blog-section .blog-box:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
 footer {
     background: rgb(237, 140, 156);
     display: flex;
