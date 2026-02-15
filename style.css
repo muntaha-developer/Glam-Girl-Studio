@@ -632,7 +632,7 @@ button:hover {
     color:#555;
 }
 
-/* Business Hours */
+
 
 .business-hours{
     margin-top:20px;
@@ -649,7 +649,7 @@ button:hover {
 }
 
 
-
+                            MAP */
 .map-section{
     padding:70px 60px;
     background:#fff;
@@ -668,7 +668,8 @@ button:hover {
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
-
+                          /* BLOG PAGE CSS START */
+                            
 .blog-section{
     display: flex;
     justify-content: center;
@@ -676,7 +677,6 @@ button:hover {
     transition: all .3s ease;
     
 }
-
 .blog-box{
     width: 600px;
     height: 300px;
@@ -709,7 +709,7 @@ button:hover {
     cursor: pointer;
 }
 
-
+                                          /* FOOTER START */
 
 footer {
     background: rgb(237, 140, 156);
@@ -761,5 +761,15 @@ footer i:hover {
     transform: scale(1.01);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-    
-    
+.footer-end{
+    background-color: rgb(222, 119, 137);
+    border-top: 2px solid #000;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+.footer-end:hover {
+         transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+                              /* FOOTER END */
+       
