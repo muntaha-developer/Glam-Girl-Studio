@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,85 +8,96 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        header {
+            height: 300px;
+            font-size: larger;
+        }
 
- header{
-    height: 300px;
-    font-size: larger;
- }
+        .faq-section {
+            padding: 2rem 0;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
- 
- .faq-section {
-    padding: 2rem 0;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.a-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    border-radius: 6px;
-    background:  #f0d3da;;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-}
-.faq{
-    width: 100%;
-    max-width: 1271px;
-    margin: -1px auto;
-  }
-  
-  /* Accordion questions */
-  #accordion h3 {
-    background-color:#d94f70;
-    color: white;
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    border-radius: 4px 4px 0 0;
-    text-shadow: 1px 1px 3px rgba(116, 82, 82, 0.4);
-  }
-  #accordion h3:hover {
-    background-color: #e1879c;
-    box-shadow: 0px 0px 8px 2px black;
-  }
-  #accordion h3:after {
-    content: '\25BC'; 
-    float: right;
-    color: white;
-  }
-  /* Accordion answers */
-  #accordion div {
-    background-color: #f8f9fa;
-    padding: 15px 20px;
-    font-size: 1rem;
-    color:  #d94f70 ;
-    line-height: 1.6;
-    border-radius: 0 0 4px 4px;
-  }
-.a-container h1 {
-    font-size: 55px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-.a-container h1 span{
-    color: #ef3965;;
-}
-.a-container p {
-    font-size: 17px;
-    margin-top: 10px;
-    line-height: 1.8;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: italic;
-}
+        .a-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border-radius: 6px;
+            background: #f0d3da;
+            ;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .faq {
+            width: 80%;
+            margin: 30px auto;
+            /* margin: -1px auto; */
+        }
+
+        /* Accordion questions */
+        #accordion h3 {
+            background-color: #d94f70;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 4px 4px 0 0;
+            text-shadow: 1px 1px 3px rgba(116, 82, 82, 0.4);
+        }
+
+        #accordion h3:hover {
+            background-color: #e1879c;
+            box-shadow: 0px 0px 8px 2px black;
+        }
+
+        #accordion h3:after {
+            content: '\25BC';
+            float: right;
+            color: white;
+        }
+
+        /* Accordion answers */
+        #accordion div {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            font-size: 1rem;
+            color: #d94f70;
+            line-height: 1.6;
+            border-radius: 0 0 4px 4px;
+        }
+
+        .a-container h1 {
+            font-size: 55px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .a-container h1 span {
+            color: #ef3965;
+            ;
+        }
+
+        .a-container p {
+            font-size: 17px;
+            margin-top: 10px;
+            line-height: 1.8;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
     </style>
 </head>
+
 <body>
-        <header>
+    <header>
         <div class="topbar">
 
             <div class="logo">
@@ -108,15 +120,16 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li class="dropdown"><a href="#">Gallery</a>
+                    <li class="dropdown"><a href="gallery.html">Gallery</a>
                         <ul class="dropdown-menu">
-                            <li class="sub-dropdown"><a href="#">Dresses</a>
+                            <li class="sub-dropdown"><a href="clothing.html">Dresses</a>
                                 <ul class="sub-dropdown-menu">
-                                    <li><a href="clothing.html">ReadyToWear</a></li>
-                                    <li><a href="clothing.html">PartyWear</a></li>
-                                    <li><a href="clothing.html">Westren</a></li>
-                                    <li><a href="clothing.html">Bridals</a></li>
-                                    <li><a href="clothing.html">Wedding</a></li>
+                                    <li><a href="clothing.html#rtw-section">ReadyToWear</a></li>
+                                    <li><a href="clothing.html#pw-section">PartyWear</a></li>
+                                    <li><a href="clothing.html#embroidery-section">Embroidery</a></li>
+                                    <li><a href="clothing.html#westren-section">Westren</a></li>
+                                    <li><a href="clothing.html#wedding-section">Wedding</a></li>
+                                    <li><a href="clothing.html#bride-section">Bridals</a></li>
                                 </ul>
                             </li>
                             <li><a href="bags.html">Bags</a></li>
@@ -132,18 +145,20 @@
         </div>
         <h1>FAQ'S</h1>
         <button>Explore Collection</button>
-        </header>
-  <main>
-         <div class="faq" data-aos="fade-up">
+    </header>
+    <main>
+        <div class="faq" data-aos="fade-up">
             <div class="faq-container" id="accordion" data-aos="fade-up">
                 <h3 class="font-para" data-aos="fade-up">What are you offering?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aperiam. Quo culpa corporis iste neque voluptas, fuga in quidem ullam.</p>
+                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Assumenda, aperiam. Quo culpa corporis iste neque voluptas, fuga in quidem ullam.</p>
                 </div>
 
                 <h3 class="font-para" data-aos="fade-up">where is your studio?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sint molestiae ad repellat vitae magnam.</p>
+                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+                        sint molestiae ad repellat vitae magnam.</p>
                 </div>
 
                 <h3 class="font-para" data-aos="fade-up">How can I place an order?</h3>
@@ -155,25 +170,27 @@
 
                 <h3 class="font-para" data-aos="fade-up">How can i cancel my order?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique expedita illo asperiores deserunt mollitia dolorum obcaecati! Explicabo consequuntur assumenda ab cumque voluptate nam deleniti delectus?</p>
+                    <p class="para" data-aos="fade-up">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique expedita illo asperiores deserunt mollitia dolorum obcaecati! Explicabo consequuntur
+                        assumenda ab cumque voluptate nam deleniti delectus?</p>
                 </div>
 
-                <h3 class="font-para" data-aos="fade-up">Do you offer gluten-free or vegan options?</h3>
+                <h3 class="font-para" data-aos="fade-up">Do you have bags and perfumes or accessories?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Yes! We offer a selection of gluten-free, egg-free, and vegan
-                        desserts. Contact us
-                        for more details.</p>
+                    <p class="para" data-aos="fade-up">Yes! We offer Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti.</p>
                 </div>
 
                 <h3 class="font-para" data-aos="fade-up">Do you deliver? </h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Yes, we offer delivery within the city for an additional fee.Delivery cost varies
+                    <p class="para" data-aos="fade-up">Yes, we offer delivery within the city for an additional
+                        fee.Delivery cost varies
                         by location.</p>
                 </div>
 
                 <h3 class="font-para" data-aos="fade-up">What types of dresses do you offer?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, vitae officia! Non ratione illum debitis deserunt ipsum provident. Quos, reprehenderit.</p>
+                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                        vitae officia! Non ratione illum debitis deserunt ipsum provident. Quos, reprehenderit.</p>
                 </div>
 
                 <h3 class="font-para" data-aos="fade-up">Do you have kids collection?</h3>
@@ -183,7 +200,8 @@
 
                 <h3 class="font-para" data-aos="fade-up">Can I check the order before payment?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora error aut adipisci consequatur distinctio esse id laboriosam repellat autem nesciunt!
+                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                        error aut adipisci consequatur distinctio esse id laboriosam repellat autem nesciunt!
                     </p>
                 </div>
 
@@ -195,12 +213,14 @@
 
                 <h3 class="font-para" data-aos="fade-up">Can I request a specific designer?</h3>
                 <div>
-                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum quidem animi, debitis reprehenderit corporis repudiandae magnam. Nostrum nesciunt laborum, praesentium repellat laboriosam maxime itaque quos rerum quae consequuntur non.</p>
+                    <p class="para" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                        harum quidem animi, debitis reprehenderit corporis repudiandae magnam. Nostrum nesciunt laborum,
+                        praesentium repellat laboriosam maxime itaque quos rerum quae consequuntur non.</p>
                 </div>
             </div>
         </div>
     </main>
-<footer>
+    <footer>
         <div class="footer-col">
             <h3>Glam GURL Studio</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, assumenda.
@@ -238,27 +258,32 @@
                 <li><a href="exchange.html">Exchange</a></li>
             </ul>
         </div>
-                 <div class="footer-end">
-           <p> &copy;COPYRIGHT2026, All Right Reserved. Made by mani and javee.</p>
+        <div class="footer-end">
+            <p> &copy;COPYRIGHT2026, All Right Reserved. Made by mani and javee.</p>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"
+        integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
 
     <script src="script.js"></script>
-     <script>
-        
-          $(document).ready(function(){
-            
-           $(function(){
-           $("#accordion").accordion();
-           });
-        
-          });
+    <script>
 
-     </script>
+        $(document).ready(function () {
+
+            $(function () {
+                $("#accordion").accordion();
+            });
+
+        });
+
+    </script>
 </body>
+
 </html>

@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glam Gurl Studio</title>
-      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css"
         integrity="sha512-TFee0335YRJoyiqz8hA8KV3P0tXa5CpRBSoM0Wnkn7JoJx1kaq1yXL/rb8YFpWXkMOjRcv5txv+C6UluttluCQ=="
@@ -13,34 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
- header{
-    height: 300px;
-    font-size: larger;
- }
- header h1{
-    font-style: italic;
-    color: white;
- }
-
-  main {
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid palevioletred;
-    background-color: rgb(236, 149, 164);
-    font-style: italic;
-    border-radius: 10px;
-    text-align: center;
-    align-items: center;
- }
- main:hover{
-    border: 6px double black;
- }
-    </style>
 </head>
 
 <body>
-      <header>
+    <header>
+
         <div class="topbar">
 
             <div class="logo">
@@ -86,43 +67,86 @@
                 </ul>
             </nav>
         </div>
-        <h1>DISCLAIMER</h1>
-        <button>Explore Collection</button>
-        </header>
-     <main>
-    <p>All content, products, images, logos, designs, videos, newsletters, catalogues available
-        on this site are owned by Weaves Corporation Limited for use on this site platform only.
-        Any un-authorized use or copy of the same is strictly prohibited.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere et voluptates cum, veniam ratione explicabo
-        aliquam quae inventore laborum eveniet placeat nobis rem quos magnam assumenda odit? Earum dolores magni
-        veritatis, laudantium nesciunt beatae unde! Vitae nisi praesentium aperiam aliquam nemo aliquid ducimus eaque,
-        assumenda cupiditate delectus rem inventore omnis iusto reiciendis! Aliquid accusantium illum in recusandae
-        cumque quis eveniet esse quia dicta reprehenderit, incidunt harum repudiandae ad voluptas vitae totam temporibus
-        quibusdam. Explicabo quasi repellendus cupiditate! Rem quae magni hic iste eius vero ipsa, fugiat fugit neque
-        voluptatum blanditiis nulla beatae deserunt ex quia dolorem! Nobis laborum amet magnam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, blanditiis saepe, reiciendis odio nulla eaque
-        aspernatur excepturi itaque, magnam maxime nesciunt at sint non unde tempora quidem natus? Est nulla dolores
-        deleniti, pariatur enim neque sint exercitationem obcaecati molestias eveniet magni quae tempore sed. Similique
-        minima assumenda vel illum cum!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et, molestiae error pariatur ex repellat,
-            tempore inventore tenetur iste sed ut itaque delectus saepe odit commodi odio doloremque neque omnis animi
-            laboriosam quis minima quae obcaecati consectetur? Consectetur impedit ducimus labore odit iure neque doloremque
-            quaerat. Molestiae aliquam quis quas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et, molestiae error pariatur ex repellat,
-            tempore inventore tenetur iste sed ut itaque delectus saepe odit commodi odio doloremque neque omnis animi
-            laboriosam quis minima quae obcaecati consectetur? Consectetur impedit ducimus labore odit iure neque doloremque
-            quaerat. Molestiae aliquam quis quas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et, molestiae error pariatur ex repellat,
-            tempore inventore tenetur iste sed ut itaque delectus saepe odit commodi odio doloremque neque omnis animi
-            laboriosam quis minima quae obcaecati consectetur? Consectetur impedit ducimus labore odit iure neque doloremque
-            quaerat. Molestiae aliquam quis quas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et, molestiae error pariatur ex repellat,
-            tempore inventore tenetur iste sed ut itaque delectus saepe odit commodi odio doloremque neque omnis animi
-            laboriosam quis minima quae obcaecati consectetur? Consectetur impedit ducimus labore odit iure neque doloremque
-            quaerat. Molestiae aliquam quis quas.</p>
-            </main>
-            
-<footer>
+        <br>
+        <div class="content">
+            <q>Unveil Your Aura with Style.</q>
+            <br>
+            <br>
+            <p class="para">Discover trendy clothing, chic bags, premium perfumes, and elegant accessories — all in one
+                place.</p>
+            <br>
+            <button>Shop Now</button>
+            <button>Explore More</button>
+        </div>
+    </header>
+    <main>
+        <h1 class="collection-heading">GALLERY</h1>
+        <section class="gallery-section">
+
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+            <div class="gallery-card">
+                <a href="images/westren1.webp" class="fancybox" data-fancybox="gallery1">
+                    <img src="images/westren1.webp" width="100%" height="100%">
+                </a>
+            </div>
+
+        </section>
+    </main>
+    <footer>
         <div class="footer-col">
             <h3>Glam GURL Studio</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, assumenda.
@@ -160,20 +184,19 @@
                 <li><a href="exchange.html">Exchange</a></li>
             </ul>
         </div>
-                <div class="footer-end">
-           <p> &copy;COPYRIGHT2026, All Right Reserved. Made by mani and javee.</p>
+        <div class="footer-end">
+            <p> &copy;COPYRIGHT2026, All Right Reserved. Made by mani and javee.</p>
         </div>
+
     </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"
-        integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="script.js"></script>
 
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
-
 </body>
 
 </html>

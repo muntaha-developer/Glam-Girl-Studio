@@ -54,7 +54,7 @@
     /* Card Containers */
     .card-container {
         padding: 20px;
-        text-align: center;
+        
     }
 
     /* Products Section */
@@ -533,6 +533,11 @@ img {
         gap:10px;
     }
 
+    .topbar .logo strong {
+    font-size: 20px;
+}
+
+
     .navbar ul{
         flex-direction:column;
         gap:15px;
@@ -558,6 +563,10 @@ img {
         flex-direction:column;
         text-align:center;
     }
+
+    footer .footer-col {
+        width: 100%;
+}
 
 }
 
