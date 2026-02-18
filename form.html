@@ -6,7 +6,7 @@
 <title>Glam Gurl Studio - Checkout</title>
 
 <style>
-.container{
+.form-container{
     max-width:900px;
     margin:auto;
     background:rgb(206, 114, 145);
@@ -39,7 +39,7 @@ input, select, textarea{
 .product-item{
     display:flex;
     justify-content: space-between;
-    margin-bottom:10px 10px;
+    margin-bottom:10px;
 }
 .product-item input[type="number"]{
     width:60px;
@@ -61,12 +61,13 @@ button:hover{
 </head>
 <body>
 
-<div class="container">
+<section class="form-container">
 <h1>Glam Gurl Studio</h1>
 
 <!-- Billing Details -->
+
 <div class="section">
-<h3>Billing Details</h3>
+<h2>Billing Details</h2>
 <label>Full Name</label>
 <input type="text" required>
 
@@ -149,9 +150,7 @@ button:hover{
 </div>
 
 <button type="submit">Place Order</button>
-
-</form>
-</div>
+</section>
 
 <script>
     

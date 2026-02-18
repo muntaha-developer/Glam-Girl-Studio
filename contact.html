@@ -16,23 +16,23 @@
 </head>
 
 <body>
-    <header>
-        <div class="topbar">
+        <header>
+    <div class="topbar">
 
             <div class="logo">
                 <strong>GLAM GURL STUDIO</strong>
             </div>
             <nav class="top-nav">
                 <ul>
-                    <br>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-circle-user"></i>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-plus"></i>
+                    
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                     <li><i class="fa-solid fa-circle-user"></i></li>
+                    <li><i class="fa-regular fa-heart"></i></li>
+                    <li><i class="fa-solid fa-cart-plus"></i></li>
                 </ul>
             </nav>
         </div>
-
+        
         <div class="navbar">
             <nav>
                 <ul>
@@ -56,26 +56,26 @@
                             <li><a href="accessories.html">Accessories</a></li>
                         </ul>
                     </li>
-
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
         </div>
-        <br>
         <div class="content">
             <q>Unveil Your Aura with Style.</q>
-            <br>
-            <br>
-            <p class="para">Discover trendy clothing, chic bags, premium perfumes, and elegant accessories — all in one
-                place.</p>
+        
+            <p class="para">Discover trendy clothing, chic bags, premium perfumes, 
+                and elegant accessories — all in one
+             place.</p>
             <br>
             <button>Shop Now</button>
             <button>Explore More</button>
         </div>
-    </header>
-    <main>
         
+    </header>
+
+    <main>
+
         <h2 class="contact-heading">CONTACT US</h2>
 
         <section class="contact-section">
@@ -86,23 +86,36 @@
                     <form class="contact-form">
                         <div class="input">
                             <label for="name">Full Name </label>
-                            <input type="text" id="name" placeholder="Enter your full name" maxlength="50" required>
+                            <input type="text" id="name" placeholder="Enter your full name" maxlength="50">
+                            <span id="nameerror" class="error"></span>
                         </div>
                         <div class="input">
                             <label for="email">Email Address </label>
-                            <input type="email" id="email" placeholder="Enter your email" required>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            <span id="emailerror" class="error"></span>
+
                         </div>
                         <div class="input">
                             <label for="contact">Contact No </label>
-                            <input type="text" id="contact no" placeholder="Contact Number" required>
+                            <input type="text" id="contact" placeholder="Contact Number">
+                            <span id="contacterror" class="error"></span>
                         </div>
                         <div class="input">
                             <label for="message">Message </label>
-                            <textarea id="message" placeholder="Enter your message" rows="6" required></textarea>
+                            <textarea id="message" placeholder="Enter your message" rows="6"></textarea>
+                            <span id="messageerror" class="error"></span>
                         </div>
                         <button>Submit</button>
                     </form>
                 </div>
+                <div id="thankYouBox" class="thank-you-box">
+    <div class="thank-you-content">
+        <h2>Form Submitted </h2>
+        <p>Thank you for contacting Glam Gurl Studio.</p>
+        <button id="closeBtn">OK</button>
+    </div>
+</div>
+
 
                 <div class="contact-info-section">
                     <h3>Our Info</h3>
@@ -151,7 +164,8 @@
         <section class="calendar">
             <h2 class="collection-heading">CALENDAR</h2>
             <div class="calendar-section">
-            <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarid&ctz=Asia/Karachi" style="border: 0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarid&ctz=Asia/Karachi"
+                    style="border: 0" width="600" height="500" frameborder="0" scrolling="no"></iframe>
             </div>
         </section>
         <section class="map-section">
@@ -170,7 +184,7 @@
     </main>
     <footer>
         <div class="footer-col">
-            <h3>Glam GURL Studio</h3>
+            <h2>GLAM GURL STUDIO</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, assumenda.
                 Lorem ipsum dolor sit amet.
                 Lorem ipsum dolor sit amet.
@@ -220,21 +234,6 @@
         integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
-<!-- 
-    <script>
-      $(document).ready(function(){
-        $('.contact-section').on('submit' , function(e){
-           let valid = true;
-           const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-           const passregex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-
-           let name = $('#name').val();
-           let name = $('#name').val();
-           let name = $('#name').val();
-           let name = $('#name').val();
-        })
-      })
-    </script> -->
 
 </body>
 

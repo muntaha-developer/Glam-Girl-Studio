@@ -5,6 +5,8 @@
     header {
         height: auto;
         text-align: center;
+        margin: 0;
+        padding: 0,
     }
 
     /* Topbar */
@@ -19,6 +21,7 @@
         justify-content: center;
         gap: 15px;
         padding: 0;
+        margin: 0;
     }
 
     /* Navbar */
@@ -38,22 +41,25 @@
     }
 
     .content q {
-        font-size: 18px;
+        font-size: 8px;
     }
 
     .content .para {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .content button {
         display: block;
         width: 100%;
         margin: 10px 0;
+        size: 2px;
     }
 
     /* Card Containers */
     .card-container {
         padding: 20px;
+        margin: 10px 30px;
+        text-align: center;
         
     }
 
