@@ -6,7 +6,7 @@
         height: auto;
         text-align: center;
         margin: 0;
-        padding: 0,
+        padding: 0;
     }
 
     /* Topbar */
@@ -35,6 +35,10 @@
         padding: 10px 0;
     }
 
+    .navbar .dropdown-menu{
+        left: -100%;
+    }
+
     /* Hero Content */
     .content {
         padding: 20px;
@@ -57,8 +61,8 @@
 
     /* Card Containers */
     .card-container {
-        padding: 20px;
-        margin: 10px 30px;
+        padding: 15px;
+        margin: 10px auto;
         text-align: center;
         
     }
@@ -103,6 +107,13 @@
     .footer-col ul {
         padding: 0;
     }
+
+    /* gallery css  */
+    .gallery-section .gallery-card{
+    width: 45%;
+    border: 2px solid #ccc;
+}
+
 }
 
 
@@ -116,8 +127,7 @@
         justify-content: center;
     }
 
-    .product,
-    .card {
+    .product{
         width: 45%;
     }
 
@@ -229,33 +239,25 @@
 @media (max-width: 992px) {
 
     .blog-section {
-        gap: 30px;
-        padding: 40px 5%;
+        gap: 20px;
     }
-
-    .blog-section img {
-        height: 300px;
-    }
+    
 }
  /* MOBILE */
 @media (max-width: 768px) {
 
+    .blog-main-section{
+        width: 80%;
+        margin: 0 auto;
+    }
     .blog-section {
-        flex-direction: column !important;
-        text-align: center;
+        flex-direction: column;
     }
-
-    .blog-box ul {
-        padding-left: 0;
-        list-style-position: inside;
+    .blog-section .image{
+        width: 100%;
     }
-
-    .blog-section img {
-        height: 250px;
-    }
-
-    .blog-box h2 {
-        font-size: 22px;
+    .blog-section .blog-box{
+        width: 100%;
     }
 }
 /* accessories.html */
@@ -327,18 +329,23 @@
     .card img {
         height: 220px;
     }
+    .gallery .container .card{
+        width: 45%;
+    }
 }
 
 /* MOBILE  */
 @media (max-width: 768px) {
 
     .container {
-        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
     .card img {
         height: 200px;
+    }
+    .gallery .container .card{
+        width: 100%;
     }
 
     .collection-heading {
